@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgaolodevs/Portfolio.git"
+  },
+  "author": "Kgaolo Malatji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kgaolodevs/Portfolio/issues"
+  },
+  "homepage": "https://github.com/kgaolodevs/Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
