@@ -5,6 +5,11 @@
 }
 
 $primary-color: #25242a;
+$secondary-color: #eece1a;
+
+@mixin easeOut {
+  transition: 0.3s all ease-in-out;
+}
 
 body {
   height: 100%;
@@ -43,4 +48,25 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  .site__icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
 }
