@@ -6,12 +6,25 @@
 
 $primary-color: #25242a;
 $secondary-color: #eece1a;
+$show-home-image: true;
+$home-image: url(../img/bg.jpg);
+$background-opacity: 0.9;
 
 @mixin easeOut {
   transition: 0.3s all ease-in-out;
 }
 
+@mixin background {
+  @if $show-home-image {
+    &#bg-image {
+      background: $home-image;
+      background-size: cover;
+    }
+  }
+}
+
 body {
+  @include background;
   height: 100%;
   background: $primary-color;
   margin: 0;
@@ -57,6 +70,13 @@ header {
 main {
   padding: 4rem;
   height: 100%;
+
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 25vh;
+    }
+  }
 
   .site__icons {
     margin-top: 1rem;
