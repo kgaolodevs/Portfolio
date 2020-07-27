@@ -27,6 +27,28 @@
   transition: 0.3s all ease-in-out;
 }
 
+.close .burgerLine--1 {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  -webkit-transform: rotateZ(50deg);
+          transform: rotateZ(50deg);
+}
+
+.close .burgerLine--2 {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  -webkit-transform: translateX(-30rem);
+          transform: translateX(-30rem);
+  opacity: 0;
+}
+
+.close .burgerLine--3 {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  -webkit-transform: translateY(-1rem) rotateZ(-50deg);
+          transform: translateY(-1rem) rotateZ(-50deg);
+}
+
 body {
   height: 100%;
   background: #25242a;

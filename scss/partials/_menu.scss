@@ -19,3 +19,21 @@
     }
   }
 }
+
+.close {
+  .burgerLine--1 {
+    @include easeOut;
+    transform: rotateZ(50deg);
+  }
+
+  .burgerLine--2 {
+    @include easeOut;
+    transform: translateX(-30rem);
+    opacity: 0;
+  }
+
+  .burgerLine--3 {
+    @include easeOut;
+    transform: translateY(-1rem) rotateZ(-50deg);
+  }
+}
