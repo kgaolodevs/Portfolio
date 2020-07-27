@@ -5,6 +5,28 @@
           box-sizing: border-box;
 }
 
+.site .site__header--burger {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+}
+
+.site .site__header--burger:hover {
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.site .site__header--burger .burgerLine {
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  margin: 0 0 5px 0;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
 body {
   height: 100%;
   background: #25242a;

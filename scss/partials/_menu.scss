@@ -1,0 +1,21 @@
+// Menu-button
+.site {
+  .site__header--burger {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    &:hover {
+      cursor: pointer;
+      @include easeOut;
+    }
+
+    .burgerLine {
+      width: 28px;
+      height: 3px;
+      background: #fff;
+      margin: 0 0 5px 0;
+      @include easeOut;
+    }
+  }
+}
