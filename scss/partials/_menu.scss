@@ -1,6 +1,6 @@
 // Menu-button
 .site {
-  .site__header--burger {
+  &__header--burger {
     position: absolute;
     z-index: 3;
     right: 35px;
@@ -16,6 +16,19 @@
       background: #fff;
       margin: 0 0 5px 0;
       @include easeOut;
+    }
+  }
+
+  &__header--menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    visibility: hidden;
+    @include easeOut;
+
+    &.show {
+      visibility: visible;
     }
   }
 }
@@ -36,4 +49,8 @@
     @include easeOut;
     transform: translateY(-1rem) rotateZ(-50deg);
   }
+}
+
+// Menu Overlay
+.menu {
 }

@@ -5,26 +5,40 @@
           box-sizing: border-box;
 }
 
-.site .site__header--burger {
+.site__header--burger {
   position: absolute;
   z-index: 3;
   right: 35px;
   top: 35px;
 }
 
-.site .site__header--burger:hover {
+.site__header--burger:hover {
   cursor: pointer;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
-.site .site__header--burger .burgerLine {
+.site__header--burger .burgerLine {
   width: 28px;
   height: 3px;
   background: #fff;
   margin: 0 0 5px 0;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
+}
+
+.site__header--menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.site__header--menu.show {
+  visibility: visible;
 }
 
 .close .burgerLine--1 {
