@@ -33,12 +33,46 @@
   width: 100%;
   opacity: 0.9;
   visibility: hidden;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
 }
 
 .site__header--menu.show {
   visibility: visible;
+}
+
+.site__header--menu .menu-branding, .site__header--menu .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.site__header--menu .menu-nav {
+  margin: 0;
+  padding: 0;
+  background: #19181c;
+  list-style: none;
+  -webkit-transform: translate3d(-200%, 0, 0);
+          transform: translate3d(-200%, 0, 0);
+  -webkit-transition: ease 0.8s all;
+  transition: ease 0.8s all;
+}
+
+.site__header--menu .menu-nav.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .close .burgerLine--1 {
