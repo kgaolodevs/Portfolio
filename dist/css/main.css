@@ -95,6 +95,15 @@
           transform: translate3d(0, 0, 0);
 }
 
+.site__header--menu .menu-nav .nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 300;
+}
+
 .close .burgerLine--1 {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
