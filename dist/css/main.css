@@ -104,6 +104,16 @@
   font-weight: 300;
 }
 
+.site__header--menu .menu-nav .nav-link:hover {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  color: #eece1a;
+}
+
+.site__header--menu .menu-nav .current > a {
+  color: #eece1a;
+}
+
 .close .burgerLine--1 {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;

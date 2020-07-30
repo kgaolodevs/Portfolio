@@ -81,6 +81,15 @@
           text-transform: uppercase;
           padding: 1rem 0;
           font-weight: 300;
+
+          &:hover {
+            @include easeOut;
+            color: $secondary-color;
+          }
+        }
+
+        .current > a {
+          color: $secondary-color;
         }
       }
     }
