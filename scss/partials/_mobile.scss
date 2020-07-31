@@ -17,6 +17,20 @@
       margin-bottom: 1rem;
     }
   }
+
+  .site {
+    ul.menu-nav,
+    div.menu-branding {
+      float: none;
+      width: 100%;
+      min-height: 0;
+    }
+
+    .menu-nav {
+      height: 75vh;
+      font-size: 24px;
+    }
+  }
 }
 
 // Smartphones
