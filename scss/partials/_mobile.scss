@@ -11,6 +11,11 @@
   main {
     align-items: center;
     text-align: center;
+
+    .site__main--heading {
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
   }
 }
 

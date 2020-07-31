@@ -143,6 +143,10 @@
             align-items: center;
     text-align: center;
   }
+  main .site__main--heading {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
 }
 
 body {
