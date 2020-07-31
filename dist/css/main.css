@@ -156,6 +156,21 @@
   .site .menu-nav {
     height: 75vh;
     font-size: 24px;
+    -webkit-transform: translate3d(200%, 0, 0);
+            transform: translate3d(200%, 0, 0);
+  }
+  .site .menu-nav.show {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .site .menu-branding {
+    height: 25vh;
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+  .site .menu-branding.show {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 

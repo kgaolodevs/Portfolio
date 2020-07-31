@@ -29,6 +29,20 @@
     .menu-nav {
       height: 75vh;
       font-size: 24px;
+      transform: translate3d(200%, 0, 0);
+      &.show {
+        // Slide in from the right
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .menu-branding {
+      height: 25vh;
+      transform: translate3d(-200%, 0, 0);
+      &.show {
+        // Slide in from the left
+        transform: translate3d(0, 0, 0);
+      }
     }
   }
 }
