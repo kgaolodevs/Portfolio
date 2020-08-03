@@ -13,7 +13,7 @@
     .burgerLine {
       width: 28px;
       height: 3px;
-      background: #fff;
+      background: set-text-color($primary-color);
       margin: 0 0 5px 0;
       @include easeOut;
     }
