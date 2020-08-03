@@ -21,8 +21,9 @@
 .site__header--burger .burgerLine {
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: #000;
   margin: 0 0 5px 0;
+  border-radius: 10rem;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
@@ -59,7 +60,7 @@
 }
 
 .site__header--menu .menu-branding {
-  background: #25242a;
+  background: #ffffff;
   -webkit-transform: translate3d(200%, 0, 0);
           transform: translate3d(200%, 0, 0);
   -webkit-transition: ease 0.8s all;
@@ -82,7 +83,7 @@
 .site__header--menu .menu-nav {
   margin: 0;
   padding: 0;
-  background: #19181c;
+  background: #f2f2f2;
   list-style: none;
   -webkit-transform: translate3d(-200%, 0, 0);
           transform: translate3d(-200%, 0, 0);
@@ -176,9 +177,9 @@
 
 body {
   height: 100%;
-  background: #25242a;
+  background: #ffffff;
   margin: 0;
-  color: #fff;
+  color: #000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
@@ -196,7 +197,7 @@ body#bg-image::after {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(37, 36, 42, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   z-index: -2;
 }
 
@@ -217,11 +218,11 @@ h2.site__main--headingSmall,
 h3.site__main--headingSmall {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(42, 41, 47, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 a {
-  color: white;
+  color: #000;
   text-decoration: none;
 }
 
