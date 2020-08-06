@@ -269,13 +269,42 @@ main .site__icons a:hover {
       grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
-.site__main--aboutInfo .bio-image {
+.site .bio-image {
   height: 20rem;
   width: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 2rem;
+  border-radius: 1rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: bioimage;
+}
+
+.site .bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: bio;
+}
+
+.site .job-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: job1;
+}
+
+.site .job-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: job2;
+}
+
+.site .job-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: job3;
 }
 /*# sourceMappingURL=main.css.map */
