@@ -69,3 +69,19 @@ main {
     }
   }
 }
+
+.site {
+  &__main--aboutInfo {
+    .bio-image {
+      height: 20rem;
+      width: 20rem;
+      object-fit: cover;
+      border-radius: 2rem;
+    }
+    display: grid;
+    grid-template-areas:
+      "bioimage bio bio"
+      "job1 job2 job3";
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

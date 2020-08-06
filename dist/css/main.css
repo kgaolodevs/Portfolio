@@ -262,4 +262,20 @@ main .site__icons a:hover {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
+
+.site__main--aboutInfo {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.site__main--aboutInfo .bio-image {
+  height: 20rem;
+  width: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+}
 /*# sourceMappingURL=main.css.map */
