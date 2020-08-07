@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-$primary-color: #25242a;
-$secondary-color: #eece1a;
+$primary-color: #050506;
+$secondary-color: #7dc1ff;
 $show-home-image: true;
 $home-image: url(../img/bg.jpg);
-$background-opacity: 0.9;
+$background-opacity: 0.75;
 
 @mixin easeOut {
   transition: 0.3s all ease-in-out;
