@@ -1,9 +1,19 @@
 // Widescreens
 @include mediaXL {
+  main {
+    .site__main--projects {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
 
 // Desktops & Laptops
 @include mediaLg {
+  main {
+    .site__main--projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 // Tablets & Notebooks
@@ -55,9 +65,16 @@
 
       grid-template-columns: 1fr;
     }
+
+    &__main--projects {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 
 // Smartphones
 @include mediaSm {
+  .site__main--projects {
+    grid-template-columns: 1fr;
+  }
 }
