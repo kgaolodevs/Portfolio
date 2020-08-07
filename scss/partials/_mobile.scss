@@ -71,6 +71,17 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
+  .site__main--boxes {
+    margin-top: 10rem;
+
+    div {
+      font-size: 1.8rem;
+      border: 3px solid #fff;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 3rem;
+    }
+  }
 }
 
 // Smartphones
@@ -90,6 +101,29 @@
       font-size: 1rem;
     }
   }
+
+  .site__main--aboutInfo {
+    .bio-image {
+      height: 15rem;
+      width: 15rem;
+    }
+  }
+  .bio {
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .site__main--boxes {
+    margin-top: 10rem;
+
+    div {
+      font-size: 1.25rem;
+      border: 3px solid #fff;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 3rem;
+    }
+  }
 }
 
 @include mediaXs {
@@ -102,6 +136,30 @@
   h2 {
     &.site__main--headingSmall {
       font-size: 0.85rem;
+    }
+  }
+
+  .site__main--aboutInfo {
+    .bio-image {
+      height: 13rem;
+      width: 13rem;
+    }
+  }
+
+  .bio {
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .site__main--boxes {
+    margin-top: 10rem;
+
+    div {
+      font-size: 1rem;
+      border: 3px solid #fff;
+      padding: 1.5rem 1rem;
+      margin-bottom: 3rem;
     }
   }
 }
