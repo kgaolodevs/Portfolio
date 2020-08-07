@@ -277,6 +277,28 @@ main .site__icons a:hover {
   grid-area: job3;
 }
 
+.site__main--projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.site__main--projects img {
+  border-radius: 0.8rem;
+  width: 100%;
+  border: 3px #fff solid;
+}
+
+.site__main--projects img:hover {
+  opacity: 0.5;
+  border-color: #eece1a;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
 .site .bio-image {
   height: 20rem;
   width: 20rem;
