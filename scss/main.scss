@@ -1,6 +1,5 @@
 @import "./partials/config";
 @import "./partials/menu";
-@import "./partials/mobile";
 
 body {
   @include background;
@@ -72,12 +71,14 @@ main {
 
 .site {
   &__main {
+    /*
     &--heading,
     &#home {
       h1 {
         margin-top: 2rem;
       }
     }
+    */
 
     &--aboutInfo {
       display: grid;
@@ -126,3 +127,5 @@ main {
       0 100px 80px rgba(0, 0, 0, 0.12);
   }
 }
+
+@import "./partials/mobile";
