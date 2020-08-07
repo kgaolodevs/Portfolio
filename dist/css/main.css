@@ -75,9 +75,9 @@
 .site__header--menu .menu-branding .portrait {
   width: 100%;
   height: 100%;
-  background: url("../../dist/img/portait.JPG");
+  background: url("../../dist/img/DSC_0683.JPG");
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .site__header--menu .menu-nav {
@@ -108,11 +108,17 @@
 .site__header--menu .menu-nav .nav-link:hover {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  color: #7dc1ff;
+  background: -webkit-gradient(linear, left top, right bottom, from(#7dc1ff), to(#8941ff));
+  background: linear-gradient(to bottom right, #7dc1ff, #8941ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .site__header--menu .menu-nav .current > a {
-  color: #7dc1ff;
+  background: -webkit-gradient(linear, left top, right bottom, from(#7dc1ff), to(#8941ff));
+  background: linear-gradient(to bottom right, #7dc1ff, #8941ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .close .burgerLine--1 {
@@ -159,7 +165,7 @@ body#bg-image::after {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(5, 5, 6, 0.75);
+  background: rgba(5, 5, 6, 0.8);
   z-index: -2;
 }
 
@@ -227,7 +233,10 @@ main .site__icons a {
 }
 
 main .site__icons a:hover {
-  color: #7dc1ff;
+  background: -webkit-gradient(linear, left top, right bottom, from(#7dc1ff), to(#8941ff));
+  background: linear-gradient(to bottom right, #7dc1ff, #8941ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
@@ -293,7 +302,6 @@ main .site__icons a:hover {
 }
 
 .site__main--projects img {
-  border-radius: 0.8rem;
   width: 100%;
   border: 3px #fff solid;
 }
@@ -336,17 +344,18 @@ main .site__icons a:hover {
 }
 
 .site .btn:hover, .site .btn-dark:hover, .site .btn-light:hover {
-  background: #7dc1ff;
+  background: -webkit-gradient(linear, left top, right bottom, from(#7dc1ff), to(#8941ff));
+  background: linear-gradient(to bottom right, #7dc1ff, #8941ff);
   color: #000;
 }
 
 .site .btn-dark {
-  background: black;
+  background: #190041;
   color: #fff;
 }
 
 .site .btn-light {
-  background: #7a7a90;
+  background: white;
   color: #25242a;
 }
 
@@ -389,6 +398,7 @@ main .site__icons a:hover {
   main .site__main--heading {
     line-height: 1.2;
     margin-bottom: 1rem;
+    font-size: 4rem;
   }
   .site ul.menu-nav,
   .site div.menu-branding {
@@ -430,6 +440,21 @@ main .site__icons a:hover {
   .site__main--projects {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  main .site__main--heading {
+    font-size: 2.9rem;
+  }
+  h2.site__main--headingSmall {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  main .site__main--heading {
+    font-size: 2.2rem;
+  }
+  h2.site__main--headingSmall {
+    font-size: 0.85rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -56,9 +56,9 @@
         .portrait {
           width: 100%;
           height: 100%;
-          background: url("../../dist/img/portait.JPG");
+          background: url("../../dist/img/DSC_0683.JPG");
           background-size: cover;
-          background-position: center;
+          background-position: top;
         }
       }
 
@@ -85,12 +85,16 @@
 
           &:hover {
             @include easeOut;
-            color: $secondary-color;
+            background: linear-gradient(to bottom right, #7dc1ff, #8941ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
         }
 
         .current > a {
-          color: $secondary-color;
+          background: linear-gradient(to bottom right, #7dc1ff, #8941ff);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
     }

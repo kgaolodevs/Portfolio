@@ -68,7 +68,9 @@ main {
     a {
       padding: 0.4rem;
       &:hover {
-        color: $secondary-color;
+        background: linear-gradient(to bottom right, #7dc1ff, #8941ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         @include easeOut();
       }
     }
@@ -102,7 +104,7 @@ main {
       .job {
         background: lighten($color: $primary-color, $amount: 5);
         padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+        border-bottom: #7dc1ff 5px solid;
       }
 
       .job-1 {
@@ -124,7 +126,6 @@ main {
       gap: 1.5rem;
 
       img {
-        border-radius: 0.8rem;
         width: 100%;
         border: 3px #fff solid;
 
@@ -159,21 +160,23 @@ main {
     padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
+
     &:hover {
-      background: $secondary-color;
+      background: linear-gradient(to bottom right, #7dc1ff, #8941ff);
+
       color: set-text-color($secondary-color);
     }
   }
 
   .btn-dark {
     @extend .btn;
-    background: darken($primary-color, 50);
+    background: darken(#8941ff, 50);
     color: #fff;
   }
 
   .btn-light {
     @extend .btn;
-    background: lighten($primary-color, 50);
+    background: lighten(#7dc1ff, 50);
     color: #25242a;
   }
 

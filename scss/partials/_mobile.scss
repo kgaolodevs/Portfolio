@@ -25,6 +25,7 @@
     .site__main--heading {
       line-height: 1.2;
       margin-bottom: 1rem;
+      font-size: 4rem;
     }
   }
 
@@ -76,5 +77,31 @@
 @include mediaSm {
   .site__main--projects {
     grid-template-columns: 1fr;
+  }
+
+  main {
+    .site__main--heading {
+      font-size: 2.9rem;
+    }
+  }
+
+  h2 {
+    &.site__main--headingSmall {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include mediaXs {
+  main {
+    .site__main--heading {
+      font-size: 2.2rem;
+    }
+  }
+
+  h2 {
+    &.site__main--headingSmall {
+      font-size: 0.85rem;
+    }
   }
 }
