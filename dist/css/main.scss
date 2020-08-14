@@ -4,7 +4,7 @@
 // Fonts
 @font-face {
   font-family: Segoe;
-  src: url(../fonts/Segoe/segoeuisl.ttf);
+  src: url(../fonts/Segoe/segoeuil.ttf);
 }
 
 @font-face {
@@ -153,8 +153,19 @@ main {
       gap: 1.5rem;
       margin-top: 3rem;
 
+      .item {
+        padding: 0.5rem;
+      }
+
       .project-title {
         margin-bottom: 0.8rem;
+      }
+
+      .project-subtitle {
+        padding-top: 0.5rem;
+        span {
+          font-weight: bold;
+        }
       }
 
       img {
