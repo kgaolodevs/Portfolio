@@ -21,6 +21,8 @@
   main {
     align-items: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 
     .site__main--heading {
       line-height: 1.2;
@@ -86,6 +88,14 @@
 
 // Smartphones
 @include mediaSm {
+  .site__main--buttons {
+    scale: 0.88;
+  }
+
+  .site__icons {
+    scale: 0.88;
+  }
+
   .site__main--projects {
     grid-template-columns: 1fr;
   }
@@ -131,6 +141,14 @@
     .site__main--heading {
       font-size: 2.2rem;
     }
+  }
+
+  .site__main--buttons {
+    scale: 0.75;
+  }
+
+  .site__icons {
+    scale: 0.75;
   }
 
   h2 {

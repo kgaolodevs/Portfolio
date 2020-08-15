@@ -469,6 +469,13 @@ main .site__icons a:hover {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main .site__main--heading {
     line-height: 1.2;
@@ -521,6 +528,12 @@ main .site__icons a:hover {
 }
 
 @media screen and (max-width: 500px) {
+  .site__main--buttons {
+    scale: 0.88;
+  }
+  .site__icons {
+    scale: 0.88;
+  }
   .site__main--projects {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -552,6 +565,12 @@ main .site__icons a:hover {
 @media screen and (max-width: 399px) {
   main .site__main--heading {
     font-size: 2.2rem;
+  }
+  .site__main--buttons {
+    scale: 0.75;
+  }
+  .site__icons {
+    scale: 0.75;
   }
   h2.site__main--headingSmall {
     font-size: 0.85rem;
