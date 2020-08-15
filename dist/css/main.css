@@ -390,11 +390,18 @@ main .site__icons a:hover {
 .site__main--buttons {
   margin-top: 2.5rem;
   margin-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .site__main--buttons .btn, .site__main--buttons .site .btn-dark, .site .site__main--buttons .btn-dark, .site__main--buttons .site .btn-light, .site .site__main--buttons .btn-light {
   border-radius: 0.5rem;
-  width: 9rem;
+  width: 10rem;
+  background: -webkit-gradient(linear, right bottom, left top, from(#7dc1ff), to(#8941ff));
+  background: linear-gradient(to top left, #7dc1ff, #8941ff);
+  color: #fff;
+  font-family: Poppins;
 }
 
 .site__main--buttons .site__main--resumeBtn {
@@ -406,6 +413,8 @@ main .site__icons a:hover {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  -webkit-transition: ease-in-out 0.2s all;
+  transition: ease-in-out 0.2s all;
 }
 
 .site .btn:hover, .site .btn-dark:hover, .site .btn-light:hover {
