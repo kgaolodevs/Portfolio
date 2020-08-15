@@ -41,7 +41,7 @@ h3 {
 
   &.site__main--headingSmall {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0.5rem;
     background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
     font-family: Poppins;
     font-size: 1.3rem;
@@ -159,6 +159,7 @@ main {
 
       .project-title {
         margin-bottom: 0.8rem;
+        font-weight: bold;
       }
 
       .project-subtitle {
@@ -197,6 +198,20 @@ main {
         margin-bottom: 3rem;
       }
     }
+
+    &--buttons {
+      margin-top: 2.5rem;
+      margin-left: 0.5rem;
+
+      .btn {
+        border-radius: 0.5rem;
+        width: 9rem;
+      }
+
+      .site__main--resumeBtn {
+        margin-right: 1rem;
+      }
+    }
   }
 
   // Button Styles
@@ -208,7 +223,7 @@ main {
 
     &:hover {
       background: linear-gradient(to bottom right, #7dc1ff, #8941ff);
-
+      cursor: pointer;
       color: set-text-color($secondary-color);
     }
   }

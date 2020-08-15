@@ -202,7 +202,7 @@ h1.site__main--headingSmall,
 h2.site__main--headingSmall,
 h3.site__main--headingSmall {
   margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
+  padding: 0.2rem 0.5rem;
   background: rgba(10, 10, 12, 0.5);
   font-family: Poppins;
   font-size: 1.3rem;
@@ -338,6 +338,7 @@ main .site__icons a:hover {
 
 .site__main--projects .project-title {
   margin-bottom: 0.8rem;
+  font-weight: bold;
 }
 
 .site__main--projects .project-subtitle {
@@ -386,6 +387,20 @@ main .site__icons a:hover {
   margin-bottom: 3rem;
 }
 
+.site__main--buttons {
+  margin-top: 2.5rem;
+  margin-left: 0.5rem;
+}
+
+.site__main--buttons .btn, .site__main--buttons .site .btn-dark, .site .site__main--buttons .btn-dark, .site__main--buttons .site .btn-light, .site .site__main--buttons .btn-light {
+  border-radius: 0.5rem;
+  width: 9rem;
+}
+
+.site__main--buttons .site__main--resumeBtn {
+  margin-right: 1rem;
+}
+
 .site .btn, .site .btn-dark, .site .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -396,6 +411,7 @@ main .site__icons a:hover {
 .site .btn:hover, .site .btn-dark:hover, .site .btn-light:hover {
   background: -webkit-gradient(linear, left top, right bottom, from(#7dc1ff), to(#8941ff));
   background: linear-gradient(to bottom right, #7dc1ff, #8941ff);
+  cursor: pointer;
   color: #000;
 }
 
